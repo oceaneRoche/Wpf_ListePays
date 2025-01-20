@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\Bangladesh_flag.png" />
+    <None Remove="images\bresil_flag.jpg" />
     <None Remove="images\China_Flag.jpg" />
     <None Remove="images\Egypt_flag.png" />
     <None Remove="images\flag_france.jpg" />
@@ -19,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\Bangladesh_flag.png" />
+    <Resource Include="images\bresil_flag.jpg" />
     <Resource Include="images\China_Flag.jpg" />
     <Resource Include="images\Egypt_flag.png" />
     <Resource Include="images\flag_france.jpg" />

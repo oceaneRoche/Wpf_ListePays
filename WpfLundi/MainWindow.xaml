@@ -21,10 +21,10 @@
                             <ColumnDefinition Width="30*"/>
                             <ColumnDefinition Width="20*"/>
                         </Grid.ColumnDefinitions>
-                        <Image Grid.Column="0"/>
+                        <Image Grid.Column="0" Style="{StaticResource StyleImage}"/>
                         <Label Grid.Column="1" Style="{StaticResource StyleLabel}" Content="{Binding Path=Nom}"/>
-                        <Label Grid.Column="2" Style="{StaticResource StyleControl}" Content="{Binding Path=Pays}"/>
-                        <Label Grid.Column="3" Style="{StaticResource StyleControl}" Content="{Binding Path=Population}"/>
+                        <Label Grid.Column="2" Style="{StaticResource StyleControl}" Content="{Binding Path=Population}"/>
+                        <Label Grid.Column="3" Style="{StaticResource StyleControl}" Content="{Binding Path=Pays}"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

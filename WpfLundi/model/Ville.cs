@@ -20,6 +20,6 @@ namespace WpfLundi.model
         }
         public String? Nom { get => nom; set => nom = value.Trim().ToUpper(); }
         public int? Population { get; set; }
-        public String? Pays { get => pays; set => pays = value.Trim().Substring(0).ToUpper(); }
+        public String? Pays { get => pays; set => pays = value.Trim().Substring(0,1).ToUpper() + value.Trim().Substring(1).ToLower(); }
     }
 }

@@ -8,4 +8,35 @@
     <Style x:Key="StyleLabel" TargetType="Label" BasedOn="{StaticResource StyleControl}">
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
+    <Style x:Key="StyleImage" TargetType="Image">
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="50"/>
+
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Chine">
+                <Setter Property="Source" Value="./images/China_Flag.jpg"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Japon">
+                <Setter Property="Source" Value="./images/Japon_Flag.jpg"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="France">
+                <Setter Property="Source" Value="./images/flag_France.jpg"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Brésil">
+                <Setter Property="Source" Value="./images/bresil_Flag.jpg"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Bangladesh">
+                <Setter Property="Source" Value="./images/Bangladesh_flag.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Inde">
+                <Setter Property="Source" Value="./images/india_flag.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Mexique">
+                <Setter Property="Source" Value="./images/mexico_Flag.jpg"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=Pays}" Value="Egypte">
+                <Setter Property="Source" Value="./images/Egypt_flag.png"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
 </ResourceDictionary>
