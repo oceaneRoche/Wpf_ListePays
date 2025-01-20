@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\China_Flag.jpg" />
+    <None Remove="images\Egypt_flag.png" />
+    <None Remove="images\flag_france.jpg" />
+    <None Remove="images\India_flag.png" />
+    <None Remove="images\japon_flag.jpg" />
+    <None Remove="images\mexico_flag.jpg" />
+    <None Remove="images\red-plus-button.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\China_Flag.jpg" />
+    <Resource Include="images\Egypt_flag.png" />
+    <Resource Include="images\flag_france.jpg" />
+    <Resource Include="images\India_flag.png" />
+    <Resource Include="images\japon_flag.jpg" />
+    <Resource Include="images\mexico_flag.jpg" />
+    <Resource Include="images\red-plus-button.jpg" />
+  </ItemGroup>
+
+</Project>
