@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfLundi.model;
 
 namespace WpfLundi
 {
@@ -19,9 +20,17 @@ namespace WpfLundi
     /// </summary>
     public partial class WindowAjouterUneVille : Window
     {
+        Ville? v;
         public WindowAjouterUneVille()
         {
             InitializeComponent();
         }
+        public WindowAjouterUneVille(Ville ville)
+        {
+            InitializeComponent();
+            v = ville;
+            DataContext = ville;
+        }
+        
     }
 }

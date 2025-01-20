@@ -11,6 +11,12 @@
             <RowDefinition Height = "10*"/>
             <RowDefinition Height = "90*"/>
         </Grid.RowDefinitions>
+        <WrapPanel HorizontalAlignment="Center" >
+            <Button MouseRightButtonUp="mouseRightButtonUp" >
+                <Image Source="./images/red-plus-button.jpg" Grid.Row="0" />
+            </Button>
+
+        </WrapPanel>
         <ListView Grid.Row="1" ItemsSource="{StaticResource villes}">
             <ListView.ItemTemplate>
                 <DataTemplate>
